@@ -37,6 +37,8 @@ RUN \
  make && \
  make install && \
  echo "**** install app ****" && \
+ mkdir -p \
+  /app/headphones && \
  curl -o \
  /tmp/headphones.tar.gz -L \
 	"https://github.com/rembo10/headphones/archive/${HEADPHONES_COMMIT}.tar.gz" && \
